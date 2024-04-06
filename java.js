@@ -12,11 +12,30 @@ function getPlayerChoice() {
 }
 const playerSelection = getPlayerChoice();
 
-// GAME
+// ONE ROUND
 function playRound(playerSelection, computerSelection) {
     console.log(`Computer chose ${computerSelection}.`); 
-    if (computerSelection === "Rock" && playerSelection.toLowerCase === "rock"){
-        console.log("Draw!");
+// DRAWS
+    if (computerSelection === "Rock" && playerSelection.toLowerCase() === "rock"){
+        return "Draw.";
+    } else if (computerSelection === "Paper" && playerSelection.toLowerCase() === "paper"){
+        return "Draw.";
+    } else if (computerSelection === "Scissors" && playerSelection.toLowerCase() === "scissors"){
+        return "Draw."; 
+// PLAYER WINS    
+    } else if (computerSelection === "Scissors" && playerSelection.toLowerCase() === "rock"){
+        return "You win!";
+    } else if (computerSelection === "Rock" && playerSelection.toLowerCase() === "paper"){
+        return "You win!";
+    } else if (computerSelection === "Paper" && playerSelection.toLowerCase() === "scissors"){
+        return "You win!";  
+// COMPUTER WINS    
+    } else if (computerSelection === "Rock" && playerSelection.toLowerCase() === "scissors"){
+        return "We have a LOSER!";
+    } else if (computerSelection === "Paper" && playerSelection.toLowerCase() === "rock"){
+        return "We have a LOSER!";
+    } else if (computerSelection === "Scissors" && playerSelection.toLowerCase() === "paper"){
+        return "We have a LOSER!";
     }
-  }
+}
 
