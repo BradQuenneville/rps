@@ -1,5 +1,22 @@
-const RPS = ['Rock', 'Paper', 'Scissors'];
+// COMPUTER SELECTION
+const choices = ['Rock', 'Paper', 'Scissors'];
+
 function getComputerChoice() {
-let compRPS = RPS[Math.floor(Math.random() * RPS.length)];
-return compRPS;
+let computerRPS = choices[Math.floor(Math.random() * choices.length)];
+return computerRPS;
 }
+const computerSelection = getComputerChoice();
+
+// PLAYER SELECTION
+function playerSelection() {
+    let playerRPS = prompt("Rock, paper, or scissors?");
+    return playerRPS;
+}
+console.log(playerSelection())
+
+// GAME
+function playRound(playerSelection, computerSelection) {
+    console.log("Computer chose ${computerSelection}")
+
+    
+  }
