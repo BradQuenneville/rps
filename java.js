@@ -38,4 +38,19 @@ function playRound(playerSelection, computerSelection) {
         return "We have a LOSER!";
     }
 }
+let roundResult = playRound(playerSelection, computerSelection)
+
+// GAME
+let playerScore = 0
+let compScore = 0
+
+function playGame(roundResult, playerScore, compScore){
+    if (roundResult === "You win!") {
+        ++playerScore, console.log(`Player WINS! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "We have a LOSER!") {
+        ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "Draw.") {
+        console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
+    }
+}
 
