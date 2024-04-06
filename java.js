@@ -2,21 +2,21 @@
 const choices = ['Rock', 'Paper', 'Scissors'];
 
 function getComputerChoice() {
-let computerRPS = choices[Math.floor(Math.random() * choices.length)];
-return computerRPS;
+    return computerRPS = choices[Math.floor(Math.random() * choices.length)];
 }
 const computerSelection = getComputerChoice();
 
 // PLAYER SELECTION
-function playerSelection() {
-    let playerRPS = prompt("Rock, paper, or scissors?");
-    return playerRPS;
+function getPlayerChoice() {
+    return prompt("Rock, paper, or scissors?");
 }
-console.log(playerSelection())
+const playerSelection = getPlayerChoice();
 
 // GAME
 function playRound(playerSelection, computerSelection) {
-    console.log("Computer chose ${computerSelection}")
-
-    
+    console.log(`Computer chose ${computerSelection}.`); 
+    if (computerSelection === "Rock" && playerSelection.toLowerCase === "rock"){
+        console.log("Draw!");
+    }
   }
+
