@@ -51,6 +51,43 @@ function playGame(roundResult, playerScore, compScore){
         ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
     } else if (roundResult === "Draw.") {
         console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
-    }
-}
+    };
+    console.log(getPlayerChoice());
+    console.log(playRound(playerSelection, computerSelection));
+    if (roundResult === "You win!") {
+        ++playerScore, console.log(`Player WINS! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "We have a LOSER!") {
+        ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "Draw.") {
+        console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
+    };
+    console.log(getPlayerChoice());
+    console.log(playRound(playerSelection, computerSelection));
+    if (roundResult === "You win!") {
+        ++playerScore, console.log(`Player WINS! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "We have a LOSER!") {
+        ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "Draw.") {
+        console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
+    };
+    console.log(getPlayerChoice())
+    console.log(playRound(playerSelection, computerSelection))
+    if (roundResult === "You win!") {
+        ++playerScore, console.log(`Player WINS! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "We have a LOSER!") {
+        ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "Draw.") {
+        console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
+    };
+    console.log(getPlayerChoice());
+    console.log(playRound(playerSelection, computerSelection));
+    if (roundResult === "You win!") {
+        ++playerScore, console.log(`Player WINS! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "We have a LOSER!") {
+        ++compScore, console.log(`Player LOSES! Player: ${playerScore}, Computer: ${compScore}`)
+    } else if (roundResult === "Draw.") {
+        console.log(`DRAW! Player: ${playerScore}, Computer: ${compScore}`)
+    };
+};
 
+console.log(playGame(roundResult, playerScore, compScore));
